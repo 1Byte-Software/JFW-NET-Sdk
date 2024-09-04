@@ -5,13 +5,12 @@
 * - 2024-08-12: Created - Steve Bang.
 */
 
-
-namespace JFW.Sdk.Models
+namespace JFW.Sdk.Models.Requests
 {
     /// <summary>
-    /// Provides the credential information for the API.
+    /// This class represents the body of the authentication request.
     /// </summary>
-    public class Credential
+    public class AuthenticationRequest
     {
         /// <summary>
         /// The authentication key for the API.
