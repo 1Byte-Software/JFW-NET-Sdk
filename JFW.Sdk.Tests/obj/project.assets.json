@@ -6109,26 +6109,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "/Users/mrsteve.bang/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_projects\\jfw\\dev\\src\\jfw.sdk\\JFW.Sdk\\JFW.Sdk.Tests\\JFW.Sdk.Tests.csproj",
+      "projectUniqueName": "/Users/mrsteve.bang/Documents/_projects/jfw/jfw-sdk-dotnet/JFW.Sdk.Tests/JFW.Sdk.Tests.csproj",
       "projectName": "JFW.Sdk.Tests",
-      "projectPath": "D:\\_projects\\jfw\\dev\\src\\jfw.sdk\\JFW.Sdk\\JFW.Sdk.Tests\\JFW.Sdk.Tests.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\_projects\\jfw\\dev\\src\\jfw.sdk\\JFW.Sdk\\JFW.Sdk.Tests\\obj\\",
+      "projectPath": "/Users/mrsteve.bang/Documents/_projects/jfw/jfw-sdk-dotnet/JFW.Sdk.Tests/JFW.Sdk.Tests.csproj",
+      "packagesPath": "/Users/mrsteve.bang/.nuget/packages/",
+      "outputPath": "/Users/mrsteve.bang/Documents/_projects/jfw/jfw-sdk-dotnet/JFW.Sdk.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mrsteve.bang/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6146,7 +6144,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net6.0": {
@@ -6184,12 +6183,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

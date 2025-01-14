@@ -5,6 +5,7 @@
 * - 2024-08-31: Created - Steve Bang.
 */
 
+using JFW.Sdk.Constants;
 using JFW.Sdk.Models.Responses;
 using System;
 using System.Collections.Generic;
@@ -23,9 +24,28 @@ namespace JFW.Sdk.Abstracts
     {
         private readonly HttpClient _httpClient;
 
+        private string BrandUrl { get; set; }
+
+        private string AuthKey { get; set; }
+
         public BaseJFWClient(HttpClient httpClient)
         {
+            httpClient.BaseAddress = new(HostUrl.Host);
             _httpClient = httpClient;
+        }
+
+        public BaseJFWClient(HttpClient httpClient, string brandUrl) : this(httpClient)
+        {
+            if (string.IsNullOrEmpty(brandUrl)) throw new NullReferenceException(nameof(brandUrl));
+            BrandUrl = brandUrl;
+
+            _httpClient.DefaultRequestHeaders.Add(nameof(BrandUrl), brandUrl);
+        }
+
+        public BaseJFWClient(HttpClient httpClient, string brandUrl, string authKey) : this(httpClient, brandUrl)
+        {
+            AuthKey = authKey;
+            _httpClient.DefaultRequestHeaders.Add(nameof(AuthKey), authKey);
         }
 
 
